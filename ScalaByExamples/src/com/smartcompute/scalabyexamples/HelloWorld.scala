@@ -1,8 +1,10 @@
 package com.smartcompute.scalabyexamples
 
-object HelloWorld extends App{
+object HelloWorld {
   
-  println("Hello World");
+  def main(args: Array[String]){
+    println("Hello World");
+  }
   
   
   
