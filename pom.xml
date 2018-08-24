@@ -12,7 +12,6 @@
     </modules>
 
 
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -20,13 +19,7 @@
         <java.version>1.8</java.version>
         <scala.version>2.11.8</scala.version>
 
-
-        <os-maven-plugin.version>1.6.0</os-maven-plugin.version>
-        <protobuf-maven-plugin.version>0.5.1</protobuf-maven-plugin.version>
-        <grpc-spring-boot-starter.version>2.3.2</grpc-spring-boot-starter.version>
-
     </properties>
-
 
 
     <repositories>
@@ -41,10 +34,7 @@
     </repositories>
 
 
-
     <dependencies>
-
-
 
 
         <dependency>
@@ -52,9 +42,6 @@
             <artifactId>grpc-spring-boot-starter</artifactId>
             <version>2.3.1</version>
         </dependency>
-
-
-
 
 
         <!-- scala-maven-plugin determines the Scala version to use from this dependency -->
@@ -68,22 +55,14 @@
     <build>
 
 
-
-        <extensions>
-            <!-- os-maven-plugin -->
-            <extension>
-                <groupId>kr.motd.maven</groupId>
-                <artifactId>os-maven-plugin</artifactId>
-                <version>${os-maven-plugin.version}</version>
-            </extension>
-        </extensions>
-
-
-
-
-
-
-
+        <!--<extensions>-->
+            <!--&lt;!&ndash; os-maven-plugin &ndash;&gt;-->
+            <!--<extension>-->
+                <!--<groupId>kr.motd.maven</groupId>-->
+                <!--<artifactId>os-maven-plugin</artifactId>-->
+                <!--<version>${os-maven-plugin.version}</version>-->
+            <!--</extension>-->
+        <!--</extensions>-->
 
 
         <plugins>
@@ -148,44 +127,34 @@
             </plugin>
 
 
-
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
             <!-- protobuf-maven-plugin -->
-            <plugin>
-                <groupId>org.xolstice.maven.plugins</groupId>
-                <artifactId>protobuf-maven-plugin</artifactId>
-                <version>${protobuf-maven-plugin.version}</version>
-                <configuration>
-                    <protocArtifact>com.google.protobuf:protoc:3.5.1-1:exe:${os.detected.classifier}</protocArtifact>
-                    <pluginId>grpc-java</pluginId>
-                    <pluginArtifact>io.grpc:protoc-gen-grpc-java:1.11.0:exe:${os.detected.classifier}</pluginArtifact>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>compile</goal>
-                            <goal>compile-custom</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-
-
-
-
-
+            <!--<plugin>-->
+                <!--<groupId>org.xolstice.maven.plugins</groupId>-->
+                <!--<artifactId>protobuf-maven-plugin</artifactId>-->
+                <!--<version>${protobuf-maven-plugin.version}</version>-->
+                <!--<configuration>-->
+                    <!--<protocArtifact>com.google.protobuf:protoc:3.5.1-1:exe:${os.detected.classifier}</protocArtifact>-->
+                    <!--<pluginId>grpc-java</pluginId>-->
+                    <!--<pluginArtifact>io.grpc:protoc-gen-grpc-java:1.11.0:exe:${os.detected.classifier}</pluginArtifact>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<goals>-->
+                            <!--<goal>compile</goal>-->
+                            <!--<goal>compile-custom</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
 
 
         </plugins>
     </build>
-
-
-
 
 
 </project>
