@@ -1,5 +1,4 @@
-package nl.ebpi.masud.scala3rdedition.intro
-
+package nl.masud.scala3rdedition.intro
 
 class Directory {
   var telePhoneDirectory = scala.collection.mutable.Map(

@@ -1,4 +1,4 @@
-package nl.ebpi.masud.scala3rdedition.fuctionandclosure
+package nl.masud.scala3rdedition.fuctionandclosure
 
 object LongLines {
 

@@ -1,4 +1,4 @@
-package nl.ebpi.masud.scala3rdedition.intro;
+package nl.masud.scala3rdedition.intro;
 
 import java.util.ArrayList;
 import java.util.List;

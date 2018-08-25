@@ -1,4 +1,4 @@
-package nl.ebpi.masud.scala3rdedition.typeparameterization
+package nl.masud.scala3rdedition.typeparameterization
 
 import scala.collection.immutable.Queue
 

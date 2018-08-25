@@ -1,5 +1,4 @@
-package nl.ebpi.masud.scala3rdedition.intro
-
+package nl.masud.scala3rdedition.intro
 
 class Customer(var name: String, var address: String)
 
